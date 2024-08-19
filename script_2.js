@@ -91,7 +91,7 @@ function fruitProcessor(apples, oranges) {
 }
 console.log(fruitProcessor(2, 3));
 */
-
+/*
 // Arrow function
 const yearsUntilRetirement = (birthYear, firstName) => {
     const age = 2024 - birthYear;
@@ -137,6 +137,7 @@ const yearsUntilRetirement4 = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement4(1992, "Bianka"));
 console.log(yearsUntilRetirement4(1968, "Mike"));
+*/
 
 
 
