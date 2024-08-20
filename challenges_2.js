@@ -3,7 +3,7 @@
 // TEST DATA 1: Dolphins scored 44, 23, and 71. Koalas scored 65, 54, and 49.
 // TEST DATA 2: Dolphins scored 85, 54, and 41. Koalas scored 23, 34, and 27.
 
-
+/*
 const calcAverage = (score1, score2, score3) => {
     const avgDolphins = ((score1 + score2 + score3) / 3);
     const avgKoalas = ((score1 + score2 + score3) / 3);
@@ -43,6 +43,8 @@ function checkWinner(avgDolphins, avgKoalas) {
 const winner1 = (checkWinner(scoreDolphins, scoreKoalas));
 
 const winner2 = (checkWinner(scoreDolphins2, scoreKoalas2));
+*/
+
 
 
 
