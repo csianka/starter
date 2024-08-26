@@ -253,7 +253,73 @@ console.log(bianka);
 console.log(`${bianka.firstName} has ${bianka.friends.length} friends, and her best friend is called ${bianka.friends[0]}.`);
 */
 
+/*
+const bianka = {
+    firstName: "Bianka",
+    lastName: "Csitari",
+    birthYear: 1992,
+    job: "developer",
+    friends: ["Anna", "Nori", "Barbi"],
+    hasDriversLicense: true,
 
+    //calcAge: function (birthYear) {
+    //    return 2037 - birthYear;
+    //}
 
+    //calcAge: function () {
+    //    console.log(this);
+    //    return 2037 - this.birthYear;
+    //}
 
+    // Calculating the age once in the object, most efficient solution
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return 2037 - this.birthYear;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${bianka.job}, and she has ${this.hasDriversLicense ? "a" : "no"} drivers license.`
+    }
+};
+
+// This is how we used to write this function before
+//const calcAge = function (birthYear) {
+//    return 2037 - birthYear;
+//}
+
+//console.log(bianka.calcAge(1992));
+//console.log(bianka["calcAge"](1992));
+
+// Calculating the age multiple times
+console.log(bianka.calcAge());
+console.log(bianka.calcAge());
+console.log(bianka.calcAge());
+console.log(bianka.calcAge());
+
+console.log(bianka.age); // we only need to calculate the age once
+*/
+
+// Challenge 
+// "Bianka is a 32-year old developer, and she has a driver's license."
+/*
+const bianka = {
+    firstName: "Bianka",
+    lastName: "Csitari",
+    birthYear: 1992,
+    job: "developer",
+    friends: ["Anna", "Nori", "Barbi"],
+    hasDriversLicense: true,
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return 2037 - this.birthYear;
+    },
+
+    getSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-year old ${this.job}, and she has ${this.hasDriversLicense ? "a" : "no"} drivers license.`
+    }
+};
+
+console.log(bianka.getSummary());
+*/
 
