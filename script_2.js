@@ -210,6 +210,50 @@ if (friends.includes("Steven")) {
 }
 */
 
+// Arrays vs. objects
+/*
+const biankaArray = ["Bianka", "Csitari", 2024 - 1992, "developer", ["Anna", "Nori", "Barbi"]];
+*/
+/*
+const bianka = {
+    firstName: "Bianka",
+    lastName: "Csitari",
+    age: 2024 - 1992,
+    job: "developer",
+    friends: ["Anna", "Nori", "Barbi"]
+};
+console.log(bianka);
+
+console.log(bianka.lastName);
+console.log(bianka["lastName"]);
+
+const nameKey = "Name";
+console.log(bianka["first" + nameKey]);
+console.log(bianka["last" + nameKey]);
+
+// console.log(bianka."last" + nameKey) this version does not work
+
+const interestedIn = prompt("What do you want to know about Bianka? Choose between firstName, lastName, age, job, and friends");
+console.log(bianka[interestedIn]);
+
+
+if (bianka[interestedIn]) {
+    console.log(bianka[interestedIn]);
+} else {
+    console.log("Wrong request! Choose between firstName, lastName, age. job and friends.")
+}
+
+bianka.location = "Sweden";
+bianka["twitter"] = "@csianka";
+console.log(bianka);
+
+// Challenge
+//"Bianka has 3 friends, and his best friend is called Anna"
+
+console.log(`${bianka.firstName} has ${bianka.friends.length} friends, and her best friend is called ${bianka.friends[0]}.`);
+*/
+
+
 
 
 
