@@ -339,3 +339,60 @@ for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep}`)
 };
 */
+
+const bianka = [
+    "Bianka",
+    "Csitari",
+    2024 - 1992,
+    "developer",
+    ["Anna", "Nori", "Barbi"],
+    true
+];
+
+const types = [];
+
+// console.log(bianka(0))
+// console.log(bianka(1))
+// ...
+// console.log(bianka(4))
+// bianka(5) does not exist
+
+
+// for (let i = 0; i < 5; i++) {
+//     console.log("bianka(i)");
+// }
+
+
+// Loop to read values from and array
+for (let i = 0; i < bianka.length; i++) {
+    //Reading from bianka array
+    console.log(bianka[i], typeof bianka[i]);
+
+    //Filling types array
+    //types[i] = typeof bianka[i];
+    types.push(typeof bianka[i]);
+};
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+    ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+
+// Continue and break
+console.log("---ONLY STRINGS---");
+for (let i = 0; i < bianka.length; i++) {
+    if (typeof bianka[i] !== "string") continue;
+    console.log(bianka[i], typeof bianka[i]);
+};
+
+console.log("---BREAK WITH NUMBER---");
+for (let i = 0; i < bianka.length; i++) {
+    if (typeof bianka[i] == "number") break;
+    console.log(bianka[i], typeof bianka[i]);
+};
